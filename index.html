@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Certificate</title>
+
+    <style>
+        body {
+            background: #f4f4f4;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center;     /* vertical center */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navy Blue Center Box */
+        .box {
+            background-color: #002147;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Clickable box -->
+    <div class="box" onclick="openCertificate()">
+        Course Certificate
+    </div>
+
+    <script>
+        function openCertificate() {
+            // Redirect to PDF file
+            window.location.href = "pdf/certificate.pdf";
+        }
+    </script>
+
+</body>
+</html>
